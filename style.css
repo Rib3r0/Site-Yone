@@ -2,16 +2,22 @@
     padding: 0px;
     margin: 0px;
 }
+
+header{
+    background: url("./img/Yone.jpg") center center no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 2000px;
+    height: 900px;
+   
+}
 .logo{
-    display: flex;
+    position: fixed;
     height: 100px;
-    position: absolute;
+    
 }
-.yone{
-    display:flex;
-    height: 700px;
-  
-}
+
 
 
 main {
