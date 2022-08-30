@@ -1,28 +1,31 @@
 *{
+
     padding: 0px;
     margin: 0px;
+    
 }
 
 header{
-    background: url("./img/Yone.jpg") center center no-repeat fixed; 
+
+    background: url("./img/Yone.jpg") no-repeat fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 2000px;
-    height: 900px;
+    background-size: 100vw;
+    height: 50vh;
+    width: 100vw;
    
 }
 .logo{
+
     position: fixed;
     height: 100px;
-    
+
 }
 
-
-
 main {
+
     display: block;
-    
     height: 150px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
@@ -30,23 +33,28 @@ main {
 
 }
 .titulo{
+
     background-color: black;
     display: flex;
     color: #ffffff;
     align-items: center;
     flex-direction: column;
     font-size: 30px;
+
 }
 .titulo2{
+
     background-color: black;
     display: flex;
     color: #ffffff;
     align-items: center;
     flex-direction: column;
     font-size: 50px;
+
 }
 
 .sub-titulo{
+
     padding: 20px;
     font-size: 40px;
     display: flex;
@@ -56,36 +64,112 @@ main {
 
 }
 .historia{
+
     display: flex;
     padding: 40px;
     background-color: #ffffff;
 
-
-
 }
 .vantagens{
+
     flex-direction: column;
     display: flex;
     padding: 40px;
     background-color: #ffffff;
 
-
 }
 .funcoes{
+
     flex-direction: row;
     display: flex;
     justify-content: end;
-
+    height: 12vw;
 
 }
 
-
 .fim{
+
     background-color: black;
     color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px;
+
+}
+
+@media (max-width:960px) {
+    .logo{
+
+        height: 90px;
+        
+    }
+
+    header{
+
+        background-size: 1000px;
+        height: 35vh;
+        width: 100vw;
+        background-position-x: center;
+
+    }
+
+}
+@media (max-width:640px) {
+
+    .logo{
+
+        height: 80px;
+        position: relative;
+        z-index: 0;
+        
+    }
+
+    header{
+
+        background-size: 900px;
+        height: 35vh;
+        width: 100vw;
+        background-position-x: center;
+
+    }
+
+    .titulo{
+
+        font-size: 20px;
+
+    }
+
+    .titulo2{
+
+        font-size: 40px;
+
+    }
+
+    .sub-titulo{
+
+        font-size: 30px;
+    
+    }
+
+    .historia{
+
+        font-size: 16px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+    }
+
+    .funcoes{
+
+       padding-right: 20px;
+    
+    }
+
+    .fim{
+
+        padding: 20px;
+        
+    }
 }
 
